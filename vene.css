@@ -1,0 +1,72 @@
+#step{
+	background:linear-gradient(to top,#FFFF,#F2F0DF,#FAEBD7,#FFE4C4,#F1E5AC,#F4A460,#F67280); 
+	border-radius: 20% 0% 0% 0%;
+}
+.bt1{
+	background: linear-gradient(to left,purple,blue);
+	width: 20%;
+	border-radius: 30px;
+	padding: 7px;
+	color: #fff;
+	margin: 0 auto;
+}
+.bt3{
+	background: linear-gradient(to left,#F75D59,#8F0B0B);
+	width: 40%;
+	border-radius: 30px;
+	padding: 7px;
+	color: #fff;
+	margin: 0 auto;
+}
+.bt4{
+	background: linear-gradient(to left,#77DD77,#00FF00);
+	width: 20%;
+	border-radius: 30px;
+	padding: 7px;
+	color: #fff;
+	margin: 0 auto;
+}
+#d1,#d4{
+	width: 65%;
+	margin: 0 auto;
+}
+#d2{
+	width: 58%;
+}
+#d2 img{
+	width: 100%;
+	height: auto;
+	border-radius: 0px 160px 160px 0px;
+	padding: 6px;
+}
+#d3{
+	width: 40%;
+	float: right;
+	padding: 20px;
+	margin-top: 40px;
+}
+#card{
+	width: 97%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr;
+	grid-gap: 20px;
+}
+#one{text-transform: uppercase;
+	font-size: 40px;  font-family: italic;
+	background: -webkit-linear-gradient(darkblue,#fff);
+     -webkit-text-fill-color:transparent;
+     -webkit-background-clip: text;
+     grid-column: 1/4;
+}
+#six h4{
+  border-bottom: 3px solid darkgreen;
+}
+#block{
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: 3fr 3fr;	
+}
+
+
+

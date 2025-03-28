@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Help Desk</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="utf-8">
+  <meta name="viweport" content="width=device-width,initial-scale=1.0">
+  <style >
+    *{
+      margin: 5px ;padding: 5px;
+    }
+  	#page{
+  		width: 97%;
+  		padding: 20px;
+  		position: absolute;
+      background: linear-gradient( 160deg ,#fff 10%, #82CAFF,#A74AC7,#9E7BFF,#CCCCFF,#FFFFFF);
+  		display: grid;
+      grid-template-columns: 2fr 2fr 2fr; 
+  		grid-gap: 20px ;
+      box-shadow: 3px 3px 4px gray;
+  	}
+    #head { 
+       grid-column:   1/6;
+       grid-row: 1/2;
+     }
+    #head input{float: right; width: 35%;  border-radius: 17px; font-size: 17px;border: 2px solid lightgray;}
+     i {float: right;}
+  	#first, #second{
+  		width: 30%;
+  		padding: 14px;
+  		border-radius: 15px;
+  		background-color: #fff;
+      box-shadow: 3px 3px 3px gray;
+  	}
+  	#first{
+      display: grid;
+      grid-column: 1/4;
+      grid-row: 2/3;
+    }
+    #second{
+      display: grid;
+      grid-column: 1/4;
+      grid-row:3/4;
+    }
+     #third{
+      display: grid;
+      grid-column: 2/5; 
+      grid-row:2/4;
+     }
+  	 .div{
+  		display: flex;
+  		margin-top: 30px;padding: 3px;border-radius: 10px;
+  		background-color: #fff;
+      box-shadow: 3px 3px 3px gray;
+  	}
+    .div i{font-size: 40px; color: skyblue;}
+  	#first input{
+  		width: 90%;border-radius: 17px; border: 2px solid lightgray; margin: 0 auto; font-size: 17px;
+  	}
+    .title{ cursor: pointer; font-size:18px;transition: 0.6s ;}
+    .title:hover{
+    background-color: skyblue;color: #fff;
+    }
+  	.title #i{ float: right;}
+    .p{ display: none;}
+    .Accordion.active .p{
+      display: block;
+
+    }
+  </style>
+</head>
+<body style="background-color: lightblues;" >
+<div id="body">
+  <h1 class="text-center display-4">Help Desk Webflow</h1>
+
+  <div id="page">
+  <div id="head" class="p-2">
+      <h3 class="text-left text-primary">Find the help <br>You need from Us </h3>
+      <input class="bg-light " type="text" placeholder="Search for anything" />
+  </div> <!-- heda-->
+
+    <div id="first">
+    	<input  placeholder="Search for anything" />
+    	<ul>
+    		<li> &nbsp;&nbsp;Geeting Visited </li>
+    		<li>&nbsp;&nbsp;Geeting Visited </li>
+    		<li> &nbsp;&nbsp;Geeting Visited </li>
+    	</ul>
+    	<div class="Accordion">
+  		   <div class="title"><i class="fa-solid fa-envelope"></i></i>Notifiied Customers &nbsp;&nbsp;<b> <i class="fa-solid fa-greater-than" id="i"></i></b></div>
+  		   <div class="p">
+  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation .
+  		   </div>
+  	   </div><!-- 1st one-->
+
+  	   <div class="Accordion">
+  		   <div class="title"><i class="fa-solid fa-pen-nib"></i>Voter Safety&nbsp;&nbsp; <b><i class="fa-solid fa-greater-than" id="i"></i></b></div>
+  		   <div class="p">
+  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation .
+  		   </div>
+  	   </div><!-- 2nd one -->
+
+  	   <div class="Accordion">
+  		   <div class="title"><i class="fa-solid fa-tag"></i>Limited Candidates  &nbsp;&nbsp; <b> <i class="fa-solid fa-greater-than" id="i"></i></b></div>
+  		   <div class="p">
+  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation .
+  		   </div>
+  	   </div><!-- 3rd one-->
+    </div><!-- first-->
+
+    <div id="second">
+    	<i></i>
+    	<h3>Need rare tages?</h3>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	quis nostrud exercitation </p>
+    </div>  <!-- second-->
+    
+
+    <div id="third" >
+      <div class="div">
+        <i class="fa-solid fa-compass"></i>
+        <div class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="div">
+        <i class="fa-solid fa-file"></i>
+        <div class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="div">
+        <i class="fa-solid fa-user"></i>
+        <div class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="div">
+        <i class="fa-solid fa-wrench"></i>
+        <div class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div> <!-- third-->
+</div><!-- page-->
+</div><!-- body-->
+
+<script type="text/javascript">
+    let items= document.querySelectorAll(".Accordion");
+     items.forEach(event=>{                      // it will derive every item into loop//
+      const title= event.querySelector(".title");
+      const para= event.querySelector(".p");
+    title.addEventListener('click',()=>{                     // toggle on title//
+       for(var i =0; i< items.length;i++){               // check each title if there any togglee open//
+            if(items[i]!= event){
+               items[i].classList.remove('active');   
+            }else{
+                event.classList.toggle('active');             // active class will put//
+            }
+         }
+    });
+   });
+  </script>
+</body>
+</html>
+<!--<i class="fa-solid fa-magnifying-glass"></i>
